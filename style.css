@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header img{
+    width: 100px;
+}
+.btn_tema{
+    display: flex;
+    align-items: center;
+    font: 700 14px Arial;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.btn_tema img{
+    width: 30px;
+}
+.banner_img{
+    background: url("img/banner-barbearia.jpg") no-repeat center;
+    min-height: 90vh;
+    width: 100%;
+}
+.sobre_barbe{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sobre_barbe h1{
+    font: 900 30px "Poppins";
+    margin: 20px auto;
+}
+.sobre_barbe .sobre p{
+    width: 70%;
+    margin: 15px auto;
+    font-size: 20px;
+}
+.sobre_barbe .sobre p:first-of-type{
+    font-weight: 800;
+}
+.asinatura p{
+    margin: 40px auto;
+    font-size: 60px;
+    color: rgb(209, 138, 72);
+    font-family: "Great Vibes";
+}
+
+/*essa parte os seletores e estilos são para ser manipulador por js*/
+.dark{
+    background: #252323;
+    color: white;
+}
+.btn_dark{
+    background: #252323;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.btn_light{
+    background: #fff;
+    color: #000;
+}
+@media(max-width: 600px){
+    .sobre_barbe .sobre p{
+        width: 95%;
+    }
+}
